@@ -161,22 +161,22 @@ $ make
 
 ### 1. Compilation error caused by ninja
 
-    Compilation gives the following error:
+Compilation gives the following error:
 
-    ```
-    ninja: build stopped: subcommand failed.
-    ninja failed with exit code 1
-    make[1]: *** [Makefile:42: all] Error 2
-    make[1]: Leaving directory '/home/scruss/c/lilygo-micropython/build_dir/esp32s3/micropython/ports/esp32'
-    make: *** [Makefile:36: all] Error 2
-    ```
+```shell
+ninja: build stopped: subcommand failed.
+ninja failed with exit code 1
+make[1]: *** [Makefile:42: all] Error 2
+make[1]: Leaving directory '/home/scruss/c/lilygo-micropython/build_dir/esp32s3/micropython/ports/esp32'
+make: *** [Makefile:36: all] Error 2
+```
 
-    Please uninstall ninja and try to compile again
+Please uninstall ninja and try to compile again
 
-    ```shell
-    sudo apt remove ninja-build
-    rm build_dir -rf
-    ```
+```shell
+sudo apt remove ninja-build
+rm build_dir -rf
+```
 
 ## Future plans
 
