@@ -1,6 +1,7 @@
 name: T-DisplayS3-AMOLED CI
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'target/esp32s3/boards/LILYGO_T-DisplayS3-AMOLED/**'
